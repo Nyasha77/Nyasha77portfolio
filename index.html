@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0 ">
+        <title>Nyasha Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/159bedbb65.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <div id="header">
+        <nav>
+               
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars"
+             style="color: #fff;
+             position: absolute;
+             top: 5%;
+             right: 5%;
+             transform: translateY(-50%);
+             font-size: 25px; "
+            onclick="openmenu()"></i>
+        </nav>
+        <img src="images/logo.png" alt="A pic of me" class="logo">
+        <div class="container">
+            
+
+            <div class="header-text">
+                <p>Software </p>
+                    
+                   <p class="p1"> Developer</p>
+                <h1>Hi, I am <br> <span>Nyasha</span><br> Musiyarira.</h1>
+            </div>
+          </div>
+    </div>
+    <!---------About------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am an aspiring software developer.
+                        The programming languages I use the most are html, css, php, java and dart.
+                        I still have a lot to learn about all these languages but I have a few basic projects using these.
+                        My other hobbies include football, excersizing, reading or playing video games.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                        <p class="tab-links"  onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Web</b></span><br>Develoment</li>
+                            <li><span><b>App</b></span><br>Development</li>
+                            <li><span><b>Ui and DB</b></span><br>Design</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>2017-2021</b></span><br>St Pauls College</li>
+                            <li><span><b>2022-Present</b></span><br>Namibia University of Science and Technolgoy</li>
+                            
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span><b>Sports</b></span><br>(Football, Running, Gym)</li>
+                            <li><span><b>Mind</b></span><br>(Fiction and Non-fiction Books)</li>
+                            <li><span><b>Random</b></span><br>(Drive)</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Services------------------------------------------------------------------>
+   <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>I offer the creation of basic fully functional Websites, designed to
+                     suit your needs.</p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>App Development</h2>
+                <p>I offer the creation of basic mobile applications for both ios and android.</p>
+                     <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>UI/Backend design</h2>
+                <p>I can design your frontend or backend to suit your needs</p>
+                     <a href="#">Learn more</a>
+            </div>
+        </div>
+      </div>
+   </div>
+   <!----------------------portfolio--------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images\work-1.jpg" alt="">
+                <div class="layer">
+                    <h3><u>Budget App</u></h3>
+                    <p>This is a section of a budget app I made in fluttter
+                        It allows you to enter amounts to preset categories 
+                        and lets you know how much you've spent.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images\work-2.jpg" alt="">
+                <div class="layer">
+                    <h3><u>Food Recipe Website</u></h3>
+                    <p>I've made a food Recipe website using html,css and php. It allows logged in users
+                       to enter the name, description and image of the food as well as view recipes of others.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_3.png" alt="">
+                <div class="layer">
+                    <h3><u>Verification and Validation</u></h3>
+                    <p>Additionally, I have successfully validated and
+                        verified software of a Namibian technology company.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+         </div>
+
+         <a href="#" class="btn">See More</a>
+
+    </div>
+   </div>
+
+   <!----------------------contact---------------------------------------->
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-inbox"></i> njadmusiy@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i> +264 81 357 6986</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nash.musiy/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/nyashamusiy/"><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+                <a href="images/Nyasha CV.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/njadmusiy@gmail.com" method="POST" >
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn21">Submit<button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>My portfolio website   &nbsp &nbsp<i class="fa-solid fa-n"></i> <i class="fa-solid fa-m"></i></p>
+    </div>
+   </div>
+
+
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    </script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+     
+    </body>
+</html>
